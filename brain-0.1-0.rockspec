@@ -1,11 +1,12 @@
 package = "brain"
-version = "0.1"
+version = "0.1-0"
 source = {
-  url = "https://github.com/palange/corona-brain",
+  url = "https://github.com/palange/brain/archive/v1.0.tar.gz",
+  dir = "brain-0.1"
 }
 description = {
   summary = "Coroutine Corona Event Handler",
-  homepage = "http://github.com/palange/corona-brain"
+  homepage = "http://github.com/palange/brain",
   license = "MIT <http://opensource.org/licenses/MIT>"
 }
 dependencies = {
@@ -15,6 +16,6 @@ dependencies = {
 build = {
   type = "builtin",
   modules = {
-    ["brain"] = "src/brain.lua",
+    brain = "src/brain.lua"
   }
 }
